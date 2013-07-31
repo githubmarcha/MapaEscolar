@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><%- title %></title>
+
+        <!-- Viewport mobile tag for sensible mobile support -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <link href="styles/bootstrap.min.css" rel="stylesheet" media="screen">
+    </head>
+
+    <body>
+        <!-- Init Body -->
+<%- body %>
+        <!-- end Body -->
+        <!-- A few key dependencies, linked in order -->
+
+        <!-- Bring in the socket.io client -->
+        <script type="text/javascript" src="/js/socket.io.js"></script>
+        
+        <!-- then beef it up with some convenience logic for talking to Sails.js -->
+        <script type="text/javascript" src="/js/sails.io.js"></script>
+
+        <!-- listen on socket.io for incoming messages -->
+        <script type="text/javascript" src="/js/app.js"></script>
+
+        <!-- JavaScript plugins (requires jQuery) -->
+        <script src="js/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>
