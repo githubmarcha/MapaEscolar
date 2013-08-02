@@ -1,0 +1,7 @@
+me_panel_base:
+    resource: "@mePanelBaseBundle/Resources/config/routing.yml"
+    prefix:   /
+
+_inicio:
+    path:  /
+    defaults: { _controller: mePanel:Inicio:index }
